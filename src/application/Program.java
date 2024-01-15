@@ -22,7 +22,7 @@ public class Program {
 		int N = sc.nextInt();
 
 		for (int i = 1; i <= N; i++) {
-			System.out.println("Dados do contribuinte nº" + i + ": ");
+			System.out.println("Dados do contribuinte nº" + i + " : ");
 			System.out.print("Pessoa física ou jurídica (f/j)? ");
 			char resp = sc.next().charAt(0);
 			sc.nextLine();
@@ -44,7 +44,7 @@ public class Program {
 		double sum = 0.0;
 
 		System.out.println();
-		System.out.println("IMPOSTOS PAGOS: ");
+		System.out.println("IMPOSTOS PAGOS:");
 		for (Contribuintes cont : list) {
 			System.out.println(cont.getNome() + " R$ " + String.format("%.2f", cont.imposto()));
 			sum += cont.imposto();
